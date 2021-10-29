@@ -11,7 +11,7 @@
 {
     /* font-family: myFont; */
     background-image:url('./images/building-1.jpg');
-    height: 33vh;
+    /* height: 33vh; */
 }
 .container-fluid{
     background-color: rgba(4, 45, 86, 0.95);
@@ -31,4 +31,11 @@
     transition: 0.5s;
     color: orangered;
     text-decoration: none;
+}
+li a
+{
+    color: white;
+}
+li a:hover{
+    color: orangered;
 }
