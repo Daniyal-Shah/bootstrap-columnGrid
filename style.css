@@ -1,0 +1,34 @@
+@font-face {
+    @font-face{
+        font-family: myFonts;
+        src: url('fontawesome-webfont.woff'), url('fontawesome-webfont.woff') format('woff');}
+  }
+  html{
+
+  }
+
+.header
+{
+    /* font-family: myFont; */
+    background-image:url('./images/building-1.jpg');
+    height: 33vh;
+}
+.container-fluid{
+    background-color: rgba(4, 45, 86, 0.95);
+    height: 100%;
+}
+
+.secondary-navigation>li{
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+}
+.secondary-navigation>li>a{
+    font-size: 0.9rem;
+    color: white;
+    font-weight: lighter;
+}
+.secondary-navigation>li>a:hover{
+    transition: 0.5s;
+    color: orangered;
+    text-decoration: none;
+}
