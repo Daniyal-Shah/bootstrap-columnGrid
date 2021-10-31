@@ -13,7 +13,7 @@
     background-image:url('./images/building-1.jpg');
     /* height: 33vh; */
 }
-.container-fluid{
+.header-container{
     background-color: rgba(4, 45, 86, 0.95);
     height: 100%;
 }
@@ -39,3 +39,93 @@ li a
 li a:hover{
     color: orangered;
 }
+
+.dropdown-item 
+{
+    background-color: #011529 !important; 
+    color: white !important;
+    padding: 0.5rem;
+
+}
+.dropdown-item :hover
+{
+    background-color: #EA6645 !important;
+    color: black !important;
+}
+.breadcrumb li
+{
+    font-weight: lighter;
+    font-size: 1rem;
+    /* margin-left: 0.5rem; */
+    margin-right: 0.5rem;
+}
+.member-card
+{
+    min-width: 12rem;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 4%;
+}
+.member-name
+{
+    font-weight: lighter;
+    font-size: 1.1rem;
+    color: darkblue;
+}
+.member-name:hover
+{
+    text-decoration: none;
+}
+.course-category
+{
+    color: darkblue;
+    font-weight: lighter;
+    font-size: 0.8rem;
+}
+.btn-view-member{
+    margin-top: 0.5rem;
+    background-color: white;
+}
+
+.description a{
+    color: blue;
+    text-decoration: none;
+}
+.description a{
+    text-decoration: none;
+    color: #000;
+}
+.description-divider{
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+    background-color: #C5C5C5;
+    height: 0.05rem;
+
+}
+ .btn-view-member{
+    color: black;
+    /* border: 5px solid #C5C5C5; */
+    /* width: 7rem; */
+    margin-top: 0.7rem; 
+    margin-bottom: 0.5rem;
+}
+/*
+.btn-outline-primary{
+    border: none;
+} */
+
+.btn-view-member :hover
+{
+    background-color: #C5C5C5 !important;
+    color:black !important;
+    /* border: none !important; */
+}
+
+.member-image :hover{
+	transform: scale(1.5);
+
+}
+
+    

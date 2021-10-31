@@ -7,19 +7,155 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="./style.css">
+    
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <!-- Bootstrap CSS -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+ @font-face {
+    @font-face{
+        font-family: myFonts;
+        src: url('fontawesome-webfont.woff'), url('fontawesome-webfont.woff') format('woff');}
+  }
+  html{
 
+  }
+
+.header
+{
+    /* font-family: myFont; */
+    background-image:url('./images/building-1.jpg');
+    /* height: 33vh; */
+}
+.header-container{
+    background-color: rgba(4, 45, 86, 0.95);
+    height: 100%;
+}
+
+.secondary-navigation>li{
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+}
+.secondary-navigation>li>a{
+    font-size: 0.9rem;
+    color: white;
+    font-weight: lighter;
+}
+.secondary-navigation>li>a:hover{
+    transition: 0.5s;
+    color: orangered;
+    text-decoration: none;
+}
+li a
+{
+    color: white;
+}
+li a:hover{
+    color: orangered;
+}
+
+.dropdown-item 
+{
+    background-color: #011529 !important; 
+    color: white !important;
+    padding: 0.5rem;
+
+}
+.dropdown-item :hover
+{
+    background-color: #EA6645 !important;
+    color: black !important;
+}
+.breadcrumb li
+{
+    font-weight: lighter;
+    font-size: 1rem;
+    /* margin-left: 0.5rem; */
+    margin-right: 0.5rem;
+}
+.member-card
+{
+    min-width: 12rem;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 4%;
+}
+.member-name
+{
+    font-weight: lighter;
+    font-size: 1.1rem;
+    color: darkblue;
+}
+.member-name:hover
+{
+    text-decoration: none;
+}
+.course-category
+{
+    color: darkblue;
+    font-weight: lighter;
+    font-size: 0.8rem;
+}
+.btn-view-member{
+    margin-top: 0.5rem;
+    background-color: white;
+}
+
+.description a{
+    color: blue;
+    text-decoration: none;
+}
+.description a{
+    text-decoration: none;
+    color: #000;
+}
+.description-divider{
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+    background-color: #C5C5C5;
+    height: 0.05rem;
+
+}
+ .btn-view-member{
+    color: black;
+    /* border: 5px solid #C5C5C5; */
+    /* width: 7rem; */
+    margin-top: 0.7rem; 
+    margin-bottom: 0.5rem;
+}
+/*
+.btn-outline-primary{
+    border: none;
+} */
+
+.btn-view-member :hover
+{
+    background-color: #C5C5C5 !important;
+    color:black !important;
+    /* border: none !important; */
+}
+
+.member-image :hover{
+	transform: scale(1.5);
+
+}
+
+         
+    </style>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
 
     <div class="header" >
-        <div class="container-fluid">  
+        <div class="container-fluid header-container">  
             <!-- Top navbar -->
             <div class="row">
-                <div class="top-navbar col">
-                    <ul class="secondary-navigation list-unstyled text-decoration-none d-flex justify-content-end mr-5" >
+                <div class="top-navbar col-12 d-none d-md-block ">
+                    <ul class="secondary-navigation list-unstyled text-decoration-none d-flex justify-content-end " >
                         <li> <a href="https://www.iba-suk.edu.pk/CSE/index" data-toggle="tooltip" data-placement="left" title="" data-original-title="Computer System Engineering">CSE</a> </li>
                         <li> <a href="https://www.iba-suk.edu.pk/crc/index" data-toggle="tooltip" data-placement="left" title="" data-original-title="Case Research Center">CRC</a> </li>    
                         <li> <a href="/oric/index" data-toggle="tooltip" data-placement="left" title="" data-original-title="Office of Research, Innovation and Commercialization">ORIC</a> </li>
@@ -37,29 +173,31 @@
 
             <div class="row">
                 <div class="col">
-                    <nav class="navbar navbar-expand-lg ">
+
+                    <nav class="navbar navbar-expand-lg  ">
                         <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-                        <img class="navbar-brand"  src="./images/logo-white.png" alt="iba-logo">
+                        <img class="navbar-brand"  src="./images/logo-white.png" alt="iba-logo">    
+
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                           <span class="navbar-toggler-icon">
                             <i class="fa fa-bars" style="color: white;" aria-hidden="true"></i>
                           </span>
                         </button>
                       
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent" >
-                          <ul class="navbar-nav mr-auto ">
+                        <div class="collapse navbar-collapse " id="navbarSupportedContent" >
+                          <ul class="navbar-nav mr-auto">
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                   University
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                  <a class="dropdown-item" href="#">Action</a>
-                                  <a class="dropdown-item" href="#">Another action</a>
-                                  <a class="dropdown-item" href="#">Something else here</a>
+                                  <a class="dropdown-item  " href="#">Action</a>
+                                  <a class="dropdown-item  " href="#">Another action</a>
+                                  <a class="dropdown-item  " href="#">Something else here</a>
                                 </div>
                               </li>
 
-                              <li class="nav-item dropdown">
+                              <li class="nav-item dropdown ">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                   Admissions
                                 </a>
@@ -74,14 +212,14 @@
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                   Faculty
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                  <a class="dropdown-item" href="#">Action</a>
-                                  <a class="dropdown-item" href="#">Another action</a>
-                                  <a class="dropdown-item" href="#">Something else here</a>
+                                <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+                                  <a class="dropdown-item " href="#">Action</a>
+                                  <a class="dropdown-item " href="#">Another action</a>
+                                  <a class="dropdown-item " href="#">Something else here</a>
                                 </div>
                               </li>                              
 
-                              <li class="nav-item">
+                              <li class="nav-item ">
                                 <a class="nav-link" href="#">Publications</a>
                               </li>
                       </ul>
@@ -93,12 +231,238 @@
             </div>
 
 
+
         </div>
     </div>
+
+    <div class="container-fluid"> 
+      <!-- first row -->
+      <div class="row" style="padding-left: 3rem; padding-right: 3rem;">
+            <!-- header starts -->
+            <div class="members-header ">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb" style="background-color: white; color: gray; font-size: 0.8rem;">
+                  <li class="breadcrumb-item"><a style="color:gray;" href="#">Home</a></li>
+                  <li class="breadcrumb-item">Faculty</li>
+                  <li class="breadcrumb-item active" aria-current="page">Computer Science</li>
+                </ol>
+              </nav> 
+              <h2 class="mb-5" style="font-weight: lighter; ">Computer Science</h2>    
+            </div>
+            <!-- header ends -->
+      </div>
+
+      <!-- second row -->
+      <div class="row px-4 ">
+
+        <div class="row col-sm-12 col-md-7 col-lg-8 d-flex justify-content-center"  id="members" style="border: 1px solid black;">
+            
+            <!-- member -->
+            <div class="member-card d-flex justify-content-center px-3 col-sm-12 col-md-4 col-lg-3  " >
+              <div class="course-thumbnail d-flex flex-column justify-content-center ">
+                <!-- image -->
+                  <div class="image-wrapper my-4 ">
+                    <a href="/faculty/details/INS-0201">
+                        <img class="member-image animate__animated animate__zoomIn d-block" src="https://facultyimages.iba-suk.edu.pk/INS-0201.jpg" style="width: 10rem; height: 10rem; border-radius: 4%;">
+                    </a>
+                  </div>
+                  <!-- description -->
+                  <div class="description">
+                      <a href="#" ><h4 class="member-name">Muhammad Irshad Nazeer</h4></a>
+                      <a href="#"> <h5 class="course-category">Assistant Professor</h5></a>
+                      
+                      <div class="description-divider"></div>
+
+                      <div class="course-meta">
+                          <span class="course-date" style="font-size:7.5pt; color: darkgray;"><i class="fas fa-envelope mr-1"></i>irshad.nazeer@iba-suk.edu.pk</span>
+                      </div>
+                      <button class="btn btn-view-member"><a class="btn" href="/faculty/details/ADM-0089"  style="font-size:10pt; width: 100%;  border: 5px solid #C5C5C5; "><b>View Details</b> </a></button>
+                  </div>
+              </div>
+            </div>
+            <!-- member ends -->
+
+            
+        </div>
+
+        <div class="col-sm-12 col-md-5 col-lg-4 text-center " style="border:1px solid brown ;">
+          <ul>
+            <li>OPTION NUMBER 1</li>
+            <li>OPTION NUMBER 2</li>
+            <li>OPTION NUMBER 3</li>
+            <li>OPTION NUMBER 4</li>
+            <li>OPTION NUMBER 5</li>
+            <li>OPTION NUMBER 6</li>
+            <li>OPTION NUMBER 7</li>
+            <li>OPTION NUMBER 8</li>
+            <li>OPTION NUMBER 9</li>
+            <li>OPTION NUMBER 10</li>
+            <li>OPTION NUMBER 11</li>
+            <li>OPTION NUMBER 12</li>
+            <li>OPTION NUMBER 13</li>
+            <li>OPTION NUMBER 14</li>
+            <li>OPTION NUMBER 15</li>
+            <li>OPTION NUMBER 16</li>
+            <li>OPTION NUMBER 17</li>
+            <li>OPTION NUMBER 18</li>
+            <li>OPTION NUMBER 19</li>
+            <li>OPTION NUMBER 20</li>
+            <li>OPTION NUMBER 21</li>
+            <li>OPTION NUMBER 22</li>
+            <li>OPTION NUMBER 23</li>
+            <li>OPTION NUMBER 24</li>
+            <li>OPTION NUMBER 25</li>
+            <li>OPTION NUMBER 26</li>
+            <li>OPTION NUMBER 27</li>
+            <li>OPTION NUMBER 28</li>
+            <li>OPTION NUMBER 29</li>
+            <li>OPTION NUMBER 30</li>
+            <li>OPTION NUMBER 31</li>
+            <li>OPTION NUMBER 32</li>
+            <li>OPTION NUMBER 33</li>
+            <li>OPTION NUMBER 34</li>
+            <li>OPTION NUMBER 35</li>
+            <li>OPTION NUMBER 36</li>
+            <li>OPTION NUMBER 37</li>
+            <li>OPTION NUMBER 38</li>
+            <li>OPTION NUMBER 39</li>
+            <li>OPTION NUMBER 40</li>
+          </ul>
+        </div>
+
+            
+            
+          </div>
+      </div>
+
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer id="page-footer">
+
+
+    <section id="footer-content" style="background-image:url('./images/building-1.jpg');padding:0px;">
+        <div style="background-color: rgba(4, 45, 86, 0.96);padding:15px;">
+            <div class="container">
+            
+                <div class="row">
+                    <div class="col-md-3 col-sm-12">
+                        <aside class="logo" style="background:#f1f1f1;padding:20px;">
+                            <br><br>
+                            <img src="./images/new-logo-updated-2.png" class="img-responsive" width="250" height="181">
+                        </aside>
+                    </div><!-- /.col-md-3 -->
+                    <div class="col-md-3 col-sm-12">
+                        <aside style="color: white;">
+                            <header><h4>Contact Us</h4></header>
+                            <address>
+                                <strong>Sukkur IBA University</strong>
+                                <br>
+                                <span>Nisar Ahmed Siddiqui Road</span>
+                                <br><br>
+                                <span> Sukkur Sindh, Pakistan</span>
+                                <br>
+                                <abbr title="Telephone">Telephone:</abbr> 071-5644000 / 05
+                                <br>
+                                <abbr title="Email">Email:</abbr> <a href="#">info@iba-suk.edu.pk</a>
+                            </address>
+                        </aside>
+                    </div><!-- /.col-md-3 -->
+                    <div class="col-md-3 col-sm-12">
+                        <aside>
+                            <header style="color: white;"><h4>Important Links</h4></header>
+                            <ul class="list-links">
+                                <li><a href="/home/contact">Contact</a></li>
+                                <li><a href="/Content/pdf/home/Employee_Handbook_2018.pdf">Employee Handbook</a></li>
+                                <li><a href="/tenders">Tenders</a> / <a href="/tenders/rfqs">RFQS</a></li>
+								<li> <a href="https://iiet.edu.pk/" data-toggle="tooltip" data-placement="left" title="" data-original-title="IBA-IET">IBA-IET</a> </li>
+                                <li><a href="/kandhkot-campus">Kandhkot Campus</a></li>
+
+                            </ul>
+                        </aside>
+                    </div><!-- /.col-md-3 -->
+                    <div class="col-md-3 col-sm-12">
+                        <aside>
+                            <header style="color: white;"><h4>Academic Sites</h4></header>
+                            <ul class="list-links">
+                                <li><a href="http://fablab.iba-suk.edu.pk/">Fab Lab</a></li>
+                                <li><a href="http://ee.iba-suk.edu.pk/">Electrical Engineering</a></li>
+                                <li><a href="/mathematics">Mathematics</a></li>
+                                <li><a href="http://cs.iba-suk.edu.pk/">Computer Science</a></li>
+                                <li><a href="http://education.iba-suk.edu.pk/">Education</a></li>
+                                <li><a href="https://www.iba-suk.edu.pk/QEC/index">QEC</a></li>
+
+                            </ul>
+                        </aside>
+                        
+                    </div><!-- /.col-md-3 -->
+                </div><!-- /.row -->
+            
+            </div> 
+        </div><!-- /.container -->
+        <!-- <div class="background"><img src="./images/building-1.jpg" class="" alt="" width="0" height="rem"></div> -->
+    </section><!-- /#footer-content -->
+
+    <section id="footer-bottom">
+        <div class="container-fluid " style="background-color: rgba(4, 45, 86, 0.96);">
+            <div class="footer-inner ">
+                <div class="copyright" style="color:white" >Copyright © 2021 - Sukkur IBA University. All rights reserved.</div><!-- /.copyright -->
+            </div><!-- /.footer-inner -->
+        </div><!-- /.container -->
+    </section><!-- /#footer-bottom -->
+
+</footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./app.js"></script>
+    <script>
+      //It is just to duplicate card and insert dynamically into parent container
+const members=document.getElementById("members");
+const memberCard=`            <div class="member-card d-flex justify-content-center px-3 col-sm-12 col-md-4 col-lg-3 " >
+<div class="course-thumbnail d-flex flex-column justify-content-center ">
+  <!-- image -->
+    <div class="image-wrapper my-4 ">
+      <a href="/faculty/details/INS-0201">
+          <img class="member-image animate__animated animate__zoomIn d-block" src="https://facultyimages.iba-suk.edu.pk/INS-0201.jpg" style="width: 10rem; height: 10rem; border-radius: 4%;">
+      </a>
+    </div>
+    <!-- description -->
+    <div class="description">
+        <a href="#" ><h4 class="member-name">Muhammad Irshad Nazeer</h4></a>
+        <a href="#"> <h5 class="course-category">Assistant Professor</h5></a>
+        
+        <div class="description-divider"></div>
+
+        <div class="course-meta">
+            <span class="course-date" style="font-size:7.5pt; color: darkgray;"><i class="fas fa-envelope mr-1"></i>irshad.nazeer@iba-suk.edu.pk</span>
+        </div>
+        <button class="btn btn-view-member"><a class="btn" href="/faculty/details/ADM-0089"  style="font-size:10pt; width: 100%;  border: 5px solid #C5C5C5; "><b>View Details</b> </a></button>
+    </div>
+</div>
+</div>`;
+
+for (let index = 0; index < 7; index++) 
+{
+    members.insertAdjacentHTML("beforeend", memberCard);    
+}
+
+
+
+    </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
+
